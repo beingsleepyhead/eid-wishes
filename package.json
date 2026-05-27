@@ -1,0 +1,19 @@
+{
+  "name": "eid-wishes",
+  "version": "1.0.0",
+  "description": "Premium Eid al-Adha motion graphics wishing website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.4",
+    "gsap": "^3.12.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.3.4",
+    "vite": "^4.4.9"
+  }
+}
