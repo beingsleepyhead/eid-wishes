@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Eid Al-Adha Wishes</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden}
+body{background:#fff;color:#000;font-family:Arial}
+#app{width:100%;height:100vh}
+.app-container{width:100%;height:100vh;background:white;position:relative;display:flex;align-items:center;justify-content:center}
+.content-wrapper{z-index:10;text-align:center;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;padding:2rem}
+.greeting-text{font-size:3rem;font-weight:700;color:#000}
+.arabic-greeting{font-size:2rem;color:#333}
+.name-highlight{color:#000;font-weight:700;text-decoration:underline}
+.closing-text{font-size:1.5rem;color:#000}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+function getUrlParams(){const p={};const q=window.location.search.slice(1);if(q){q.split('&').forEach(x=>{const[k,v]=x.split('=');p[k]=decodeURIComponent(v)});}return p;}
+window.addEventListener('DOMContentLoaded',function(){const params=getUrlParams();const name=params.name?params.name.toUpperCase():'DEAR FRIEND';const html=`<div class="app-container"><div class="content-wrapper"><h1 class="greeting-text">Eid Al-Adha Mubarak</h1><div class="arabic-greeting">عيد الأضحى مبارك</div><p>To <span class="name-highlight">${name}</span></p><p>Wishing you a joyful Eid filled with love, happiness, and countless blessings.</p><p class="closing-text">Eid Mubarak!</p></div></div>`;document.getElementById('app').innerHTML=html;});
+</script>
+</body>
+</html>
